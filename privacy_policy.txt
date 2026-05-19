@@ -1,0 +1,205 @@
+Privacy Policy
+
+Last updated: May 19, 2026
+App name: AI Guide
+Website: aiguidia.com
+Owner: itkeys
+Contact: contact@itkeys.net
+
+1. Introduction
+
+This Privacy Policy explains how AI Guide collects, uses, stores, and protects information when you use our mobile application and related website.
+
+AI Guide is an educational application that helps users learn about artificial intelligence tools through guides, lessons, comparisons, quizzes, and related content.
+
+By using AI Guide, you agree to the practices described in this Privacy Policy.
+
+2. Internet Connection Requirement
+
+AI Guide requires an internet connection to work properly. We use internet access permission to:
+
+load lessons, guides, AI tool information, and course content;
+allow users to sign in or create an account;
+save and sync learning progress;
+display advertisements;
+check connection status and prevent use of the app when no internet connection is available.
+
+If your device is offline, some or all parts of the app may not be available until the connection is restored.
+
+3. Information We Collect
+
+We may collect the following types of information depending on how you use the app.
+
+Account Information
+
+When you create an account or sign in, we may collect:
+
+email address;
+authentication ID;
+display name, if provided;
+profile information, if provided;
+login and account status information.
+
+Authentication is handled using Supabase.
+
+Learning and Progress Data
+
+To provide learning features, we may store:
+
+lessons or guides you open;
+completed lessons or pages;
+quiz progress and quiz results;
+bookmarks or saved content;
+streaks or learning activity;
+app preferences related to your learning experience.
+
+This information is used to save your progress and sync it across devices when you are signed in.
+
+Technical and Device Information
+
+We and our third-party service providers may process technical information such as:
+
+device type;
+operating system;
+app version;
+crash or diagnostic information;
+IP address;
+advertising identifiers, where applicable;
+interaction data related to ads or app usage.
+
+Google states that the Google Mobile Ads SDK may automatically collect and share certain data for advertising, analytics, and fraud prevention, including IP address, user product interactions, diagnostic information, and device/account identifiers.
+
+4. How We Use Information
+
+We use information to:
+
+provide and improve the app;
+create and manage user accounts;
+save learning progress;
+sync lessons, streaks, bookmarks, and profile data;
+load course content from our database;
+display advertisements;
+improve app performance and fix errors;
+prevent fraud, abuse, or unauthorized access;
+comply with legal obligations.
+5. Third-Party Services We Use
+
+AI Guide uses third-party services to operate the app.
+
+Supabase
+
+We use Supabase for:
+
+user authentication;
+account management;
+storing course content;
+storing user progress;
+storing profile-related data;
+syncing data across devices.
+
+Supabase Auth provides authentication and user-management tools, and Supabase explains that its services may process personal information according to its privacy notice and, for customer data, as a processor under customer instructions.
+
+Google AdMob
+
+We use Google AdMob to display ads in the app. AdMob may collect or process information such as advertising identifiers, IP address, device information, ad interactions, and diagnostic data.
+
+Google may use this information to provide ads, measure ad performance, prevent fraud, and improve its advertising services. Users can manage some ad personalization choices through Google and device settings. Google describes advertising data controls and ad personalization options in its privacy and advertising information.
+
+6. Advertising
+
+AI Guide may show banner ads, native ads, interstitial ads, or other ad formats through Google AdMob.
+
+Ads may be personalized or non-personalized depending on your location, consent choices, device settings, and applicable law.
+
+We do not control every ad shown by Google AdMob, but we aim to use advertising in a way that does not interfere with the main learning experience.
+
+7. Course Content and Data Sources Disclaimer
+
+The educational content in AI Guide is created for informational and learning purposes.
+
+The sources used to prepare lessons, guides, and descriptions are mainly official documentation, official websites, and public materials from the relevant AI tools and companies when available.
+
+However:
+
+AI tools and services change frequently;
+official documentation may be updated after our content is published;
+some information may become outdated;
+AI Guide is not the official app of any third-party AI company unless clearly stated.
+
+Users should always check the official website or official documentation of each AI tool for the most current and authoritative information.
+
+8. No Affiliation With AI Tool Companies
+
+AI Guide may mention third-party AI tools, products, services, or company names for educational purposes.
+
+Names such as ChatGPT, Claude, Perplexity, Meta AI, DeepSeek, Notion AI, and other tool names belong to their respective owners.
+
+AI Guide is not affiliated with, endorsed by, sponsored by, or officially connected to those companies unless we clearly state otherwise.
+
+9. Data Sharing
+
+We do not sell your personal information directly.
+
+We may share or process information with trusted service providers only when needed to operate the app, including:
+
+Supabase for authentication, database, and storage;
+Google AdMob for advertising;
+analytics, hosting, or security providers if added in the future;
+legal authorities if required by law.
+10. Data Retention
+
+We keep your information only as long as necessary to provide the app, maintain your account, comply with legal obligations, resolve disputes, or improve our services.
+
+If you delete your account, we will delete or anonymize personal information connected to your account, unless we are required to keep certain information for legal, security, or fraud-prevention reasons.
+
+11. Account Deletion
+
+You may request deletion of your account and related personal data by:
+
+using the account deletion option inside the app, if available; or
+contacting us at [your email address].
+
+After deletion, your saved progress, profile data, and account-related information may no longer be recoverable.
+
+12. Security
+
+We take reasonable technical and organizational steps to protect your information.
+
+However, no method of internet transmission or electronic storage is completely secure. We cannot guarantee absolute security.
+
+13. Children and Teen Users
+
+AI Guide is intended for users aged 13 and older.
+
+If you are under 13, you should not use the app or create an account.
+
+If you are between 13 and 17, you should use the app with permission from a parent or legal guardian.
+
+If we discover that we collected personal information from a child under 13 without proper consent, we will take reasonable steps to delete that information.
+
+14. Your Rights
+
+Depending on your location, you may have rights to:
+
+access your personal information;
+correct inaccurate information;
+delete your personal information;
+object to certain processing;
+withdraw consent where processing is based on consent;
+request a copy of your data.
+
+To make a request, contact us at [your email address].
+
+15. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time.
+
+When we update it, we will change the “Last updated” date above. Continued use of the app after changes means you accept the updated policy.
+
+16. Contact Us
+
+For questions about this Privacy Policy, contact us at:
+
+itkeys
+Email: contact@itkeys.net
+Website: itkeys.net

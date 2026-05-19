@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#07112F"/>
+      <stop offset="100%" stop-color="#050B24"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16D9F5"/>
+      <stop offset="100%" stop-color="#7A4DFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="100" r="240" fill="#7A4DFF" opacity="0.18"/>
+  <circle cx="1050" cy="540" r="220" fill="#16D9F5" opacity="0.15"/>
+  <g transform="translate(80,210)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="800" fill="#ffffff">Learn AI Tools</text>
+    <text x="0" y="110" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="800" fill="url(#brand)">Faster.</text>
+    <text x="0" y="200" font-family="Inter, Arial, sans-serif" font-size="28" fill="#AAB4D4">Discover, compare, and master ChatGPT, Claude, Gemini,</text>
+    <text x="0" y="240" font-family="Inter, Arial, sans-serif" font-size="28" fill="#AAB4D4">Perplexity, DeepSeek and more — with AI Guide.</text>
+  </g>
+  <g transform="translate(940,140)">
+    <rect x="0" y="0" width="180" height="180" rx="36" fill="#07112F" stroke="url(#brand)" stroke-width="3"/>
+    <g transform="translate(34,34) scale(1.7)">
+      <path d="M14 44 L32 40 L50 44 L50 50 L32 46 L14 50 Z" fill="url(#brand)"/>
+      <path d="M22 28c0-5 4-9 9-9 1 0 2 .2 3 .5V40H22V28z" stroke="url(#brand)" stroke-width="2" fill="none"/>
+      <path d="M42 28c0-5-4-9-9-9-1 0-2 .2-3 .5V40h12V28z" stroke="url(#brand)" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+  <text x="80" y="560" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">aiguidia.com</text>
+</svg>

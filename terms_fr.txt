@@ -1,0 +1,158 @@
+Conditions d’utilisation
+
+Dernière mise à jour : 19 mai 2026
+Nom de l’application : AI Guide
+Site web : aiguidia.com
+Propriétaire : itkeys
+Contact : cantact@itkeys.net
+
+1. Acceptation des conditions
+
+En téléchargeant, accédant ou utilisant AI Guide, vous acceptez les présentes Conditions d’utilisation.
+
+Si vous n’acceptez pas ces Conditions, vous ne devez pas utiliser l’application.
+
+2. À propos d’AI Guide
+
+AI Guide est une application éducative qui aide les utilisateurs à apprendre à utiliser les outils d’intelligence artificielle grâce à des guides, des leçons, des comparaisons, des quiz et du contenu pédagogique.
+
+L’application peut inclure :
+
+des guides sur les outils d’IA ;
+des parcours d’apprentissage ;
+des quiz ;
+du contenu de comparaison ;
+des actualités ou contenus informatifs ;
+des publicités ;
+des fonctionnalités de compte et de suivi de progression.
+3. Connexion Internet requise
+
+AI Guide nécessite une connexion Internet active.
+
+L’application peut cesser de fonctionner, limiter l’accès ou afficher un message hors ligne lorsqu’aucune connexion Internet n’est disponible. Cela est nécessaire pour charger le contenu, authentifier les utilisateurs, synchroniser la progression et afficher les publicités.
+
+Vous êtes responsable de votre propre connexion Internet ainsi que des éventuels frais de données facturés par votre opérateur mobile ou fournisseur d’accès Internet.
+
+4. Comptes
+
+Certaines fonctionnalités peuvent nécessiter un compte, notamment le suivi de progression, les favoris, les séries d’apprentissage, les fonctionnalités de profil et la synchronisation entre appareils.
+
+Vous acceptez de :
+
+fournir des informations de compte exactes ;
+garder vos identifiants de connexion sécurisés ;
+ne pas partager votre compte avec des utilisateurs non autorisés ;
+nous informer si vous pensez que votre compte a été consulté sans autorisation.
+
+Nous pouvons suspendre ou supprimer les comptes qui enfreignent ces Conditions ou utilisent l’application de manière abusive.
+
+5. Usage éducatif uniquement
+
+AI Guide est fournie uniquement à des fins éducatives et informatives.
+
+L’application ne fournit pas de conseils professionnels, juridiques, financiers, médicaux ou commerciaux. Vous ne devez pas utiliser l’application comme seule source d’information pour prendre des décisions importantes.
+
+6. Clause de non-responsabilité concernant le contenu des cours
+
+Les leçons et guides d’AI Guide sont préparés à partir de sources accessibles au public, principalement les documentations officielles et sites web officiels des outils et entreprises d’IA lorsque ces sources sont disponibles.
+
+Cependant, les outils d’IA peuvent changer rapidement. Les fonctionnalités, prix, limites, conditions, comportements des modèles et documentations peuvent changer à tout moment.
+
+Nous faisons de notre mieux pour garder le contenu exact et utile, mais nous ne garantissons pas que toutes les informations soient toujours complètes, actuelles ou exemptes d’erreurs.
+
+Vous devez toujours consulter le site web officiel ou la documentation officielle de chaque outil d’IA avant de vous fier aux informations.
+
+7. Absence d’affiliation officielle
+
+AI Guide peut mentionner des outils, plateformes, produits, logos ou noms d’entreprises tiers à des fins éducatives.
+
+Toutes les marques, logos et noms commerciaux appartiennent à leurs propriétaires respectifs.
+
+AI Guide n’est pas affilié, approuvé, sponsorisé ou officiellement lié à OpenAI, Anthropic, Perplexity, Meta, DeepSeek, Notion ou toute autre entreprise tierce, sauf indication claire contraire.
+
+8. Services tiers
+
+AI Guide utilise des services tiers, notamment :
+
+Supabase pour la connexion, l’authentification, le stockage en base de données, le contenu des cours et le suivi de progression ;
+Google AdMob pour la publicité.
+
+Votre utilisation de l’application peut également être soumise aux politiques de confidentialité et conditions d’utilisation de ces services tiers.
+
+Nous ne sommes pas responsables du contenu, des politiques, des actions ou de la disponibilité des services tiers.
+
+9. Publicités
+
+AI Guide peut afficher des publicités via Google AdMob.
+
+Les publicités aident à soutenir l’application et à maintenir le contenu disponible. Nous ne garantissons pas l’exactitude, la qualité ou l’adéquation des produits ou services affichés dans les publicités.
+
+Toute interaction avec une publicité se fait entre vous et l’annonceur.
+
+10. Comportement de l’utilisateur
+
+Vous acceptez de ne pas :
+
+utiliser l’application à des fins illégales ;
+tenter de pirater, endommager, surcharger ou perturber l’application ;
+copier, extraire ou utiliser abusivement le contenu de l’application sans autorisation ;
+faire de l’ingénierie inverse ou tenter d’extraire le code source ;
+créer de faux comptes ou usurper l’identité d’une autre personne ;
+utiliser l’application d’une manière qui nuit aux autres utilisateurs ou au service.
+11. Propriété intellectuelle
+
+Tout le contenu original, la conception, la mise en page, les textes, les éléments graphiques et les fonctionnalités créés par AI Guide appartiennent à [Nom de votre entreprise] ou sont utilisés sous licence.
+
+Vous pouvez utiliser l’application uniquement à des fins d’apprentissage personnel.
+
+Vous ne pouvez pas copier, revendre, redistribuer ou reproduire notre contenu sans autorisation écrite, sauf lorsque la loi l’autorise.
+
+12. Contenu et marques de tiers
+
+Certains contenus peuvent faire référence à des produits, services, documentations, noms ou marques de tiers.
+
+Ces éléments restent la propriété de leurs propriétaires respectifs. Leur mention dans AI Guide n’implique aucune approbation, partenariat ou autorisation officielle.
+
+13. Disponibilité de l’application
+
+Nous pouvons mettre à jour, modifier, suspendre ou interrompre toute partie de l’application à tout moment.
+
+Nous ne garantissons pas que l’application sera toujours disponible, ininterrompue, sécurisée ou exempte d’erreurs.
+
+14. Limitation de responsabilité
+
+Dans la mesure maximale autorisée par la loi, AI Guide et son propriétaire ne seront pas responsables :
+
+des dommages indirects ou accidentels ;
+de la perte de données ;
+de la perte de progression ;
+du contenu éducatif incorrect ou obsolète ;
+des problèmes causés par des services tiers ;
+des problèmes causés par une absence de connexion Internet ;
+des décisions prises sur la base du contenu de l’application.
+
+Vous utilisez l’application à vos propres risques.
+
+15. Suspension ou résiliation du compte
+
+Nous pouvons suspendre ou résilier l’accès à l’application si vous violez ces Conditions, utilisez l’application de manière abusive, créez un risque pour d’autres utilisateurs ou enfreignez les lois applicables.
+
+Vous pouvez cesser d’utiliser l’application à tout moment.
+
+16. Modifications des Conditions
+
+Nous pouvons mettre à jour ces Conditions d’utilisation de temps à autre.
+
+Lorsque nous les mettons à jour, nous modifions la date de “Dernière mise à jour” ci-dessus. La poursuite de l’utilisation de l’application après ces modifications signifie que vous acceptez les Conditions mises à jour.
+
+17. Droit applicable
+
+Ces Conditions sont régies par les lois de [votre pays ou juridiction légale], sauf si les lois applicables en matière de protection des consommateurs exigent autrement.
+
+18. Nous contacter
+
+Pour toute question concernant ces Conditions, contactez-nous à :
+
+itkeys
+E-mail : cantact@itkeys.net
+Site web : aiguidia.com
