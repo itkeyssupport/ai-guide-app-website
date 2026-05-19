@@ -2,8 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Section } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { buildMeta, buildLinks } from "@/components/site/seo";
-import { Newspaper, Zap, TrendingUp, Bell } from "lucide-react";
+import { Newspaper, Zap, TrendingUp, Bell, Download } from "lucide-react";
 import { CTASection } from "@/components/site/CTASection";
+import { GOOGLE_PLAY_URL } from "@/config/site";
 
 export const Route = createFileRoute("/ar/news")({
   head: () => ({
@@ -27,7 +28,7 @@ const NEWS_FEATURES = [
   {
     icon: TrendingUp,
     title: "اتجاهات الصناعة",
-    text: "تابع التطورات الرئيسية التي تشكّل مشهد الذكاء الاصطناعي — من اختراقات البحث إلى تحديثات المنتجات الكبرى.",
+    text: "تابع التطورات الرئيسية التي تشكّل مشهد الذكاء الاصطناعي، من اختراقات البحث إلى تحديثات المنتجات الكبرى.",
   },
   {
     icon: Bell,
@@ -42,7 +43,7 @@ function NewsPageAr() {
       <PageHero
         eyebrow="أخبار الذكاء الاصطناعي"
         title="ابق على اطلاع بآخر أخبار الذكاء الاصطناعي."
-        description="إصدارات النماذج، تحديثات المنتجات، اتجاهات الصناعة — منتقاة ومتاحة من خلال تطبيق AI Guide."
+        description="إصدارات النماذج، تحديثات المنتجات، اتجاهات الصناعة، منتقاة ومتاحة من خلال تطبيق AI Guide."
       />
 
       <Section className="!pt-0">
@@ -60,14 +61,23 @@ function NewsPageAr() {
             ))}
           </div>
 
-          <div className="glass rounded-2xl p-8 text-center space-y-4" data-reveal>
+          <div className="glass rounded-2xl p-8 text-center space-y-5" data-reveal>
             <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-brand mx-auto">
               <Newspaper className="h-7 w-7 text-[#07112F]" />
             </div>
             <h2 className="text-2xl font-bold text-white">أخبار الذكاء الاصطناعي متاحة داخل التطبيق</h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              حمّل AI Guide للوصول إلى أخبار الذكاء الاصطناعي المنتقاة إلى جانب مسارات التعلم ومقارنات الأدوات والأدلة — كل ذلك في مكان واحد.
+              لعرض آخر أخبار الذكاء الاصطناعي، قم بزيارة تطبيقنا. استمتع بالأخبار المنتقاة إلى جانب مسارات التعلم ومقارنات الأدوات والأدلة، كل ذلك في مكان واحد.
             </p>
+            <a
+              href={GOOGLE_PLAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-[#07112F] hover:opacity-90 transition-opacity shadow-md"
+            >
+              <Download className="h-4 w-4" />
+              تحميل AI Guide
+            </a>
           </div>
 
         </div>

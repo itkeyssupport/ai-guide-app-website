@@ -2,8 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, Section } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { buildMeta, buildLinks } from "@/components/site/seo";
-import { Newspaper, Zap, TrendingUp, Bell } from "lucide-react";
+import { Newspaper, Zap, TrendingUp, Bell, Download } from "lucide-react";
 import { CTASection } from "@/components/site/CTASection";
+import { GOOGLE_PLAY_URL } from "@/config/site";
 
 export const Route = createFileRoute("/news")({
   head: () => ({
@@ -27,7 +28,7 @@ const NEWS_FEATURES = [
   {
     icon: TrendingUp,
     title: "Industry Trends",
-    text: "Follow the key developments shaping the AI landscape — from research breakthroughs to major product updates.",
+    text: "Follow the key developments shaping the AI landscape, from research breakthroughs to major product updates.",
   },
   {
     icon: Bell,
@@ -42,7 +43,7 @@ function NewsPage() {
       <PageHero
         eyebrow="AI News"
         title="Stay updated with the latest in AI."
-        description="Model releases, product updates, industry trends — curated and delivered through the AI Guide app."
+        description="Model releases, product updates, industry trends, curated and delivered through the AI Guide app."
       />
 
       <Section className="!pt-0">
@@ -60,14 +61,23 @@ function NewsPage() {
             ))}
           </div>
 
-          <div className="glass rounded-2xl p-8 text-center space-y-4" data-reveal>
+          <div className="glass rounded-2xl p-8 text-center space-y-5" data-reveal>
             <div className="inline-flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-brand mx-auto">
               <Newspaper className="h-7 w-7 text-[#07112F]" />
             </div>
             <h2 className="text-2xl font-bold text-white">AI News is available inside the app</h2>
             <p className="text-muted-foreground max-w-lg mx-auto">
-              Download AI Guide to access curated AI news alongside your learning paths, tool comparisons, and guides — all in one place.
+              To view the latest AI news, visit our application. Access curated news alongside your learning paths, tool comparisons, and guides, all in one place.
             </p>
+            <a
+              href={GOOGLE_PLAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-[#07112F] hover:opacity-90 transition-opacity shadow-md"
+            >
+              <Download className="h-4 w-4" />
+              Download AI Guide
+            </a>
           </div>
 
         </div>
