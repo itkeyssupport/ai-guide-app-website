@@ -83,6 +83,14 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://aiguidia.com/news</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiguidia.com/news"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiguidia.com/fr/news"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://aiguidia.com/ar/news"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- French pages -->
   <url>
@@ -138,6 +146,11 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://aiguidia.com/fr/news</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Arabic pages -->
   <url>
@@ -192,6 +205,11 @@
     <loc>https://aiguidia.com/ar/delete-account</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aiguidia.com/ar/news</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

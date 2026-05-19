@@ -30,7 +30,7 @@ function TermsPageFr() {
           <div className="glass rounded-2xl p-6 space-y-3 text-muted-foreground">
             <p><span className="text-white font-medium">Nom de l'application :</span> AI Guide</p>
             <p><span className="text-white font-medium">Site web :</span> aiguidia.com</p>
-            <p><span className="text-white font-medium">Propriétaire :</span> itkeys</p>
+            <p><span className="text-white font-medium">Propriétaire :</span> itkeys.net</p>
             <p><span className="text-white font-medium">Contact :</span> contact@itkeys.net</p>
           </div>
 
@@ -118,7 +118,7 @@ function TermsPageFr() {
           </S>
 
           <S title="11. Propriété intellectuelle">
-            <p>Tout le contenu original, la conception, la mise en page, les textes, les éléments graphiques et les fonctionnalités créés par AI Guide appartiennent à itkeys ou sont utilisés sous licence.</p>
+            <p>Tout le contenu original, la conception, la mise en page, les textes, les éléments graphiques et les fonctionnalités créés par AI Guide appartiennent à itkeys.net ou sont utilisés sous licence.</p>
             <p>Vous pouvez utiliser l'application uniquement à des fins d'apprentissage personnel.</p>
             <p>Vous ne pouvez pas copier, revendre, redistribuer ou reproduire notre contenu sans autorisation écrite, sauf lorsque la loi l'autorise.</p>
           </S>
@@ -164,7 +164,7 @@ function TermsPageFr() {
           <S title="18. Nous contacter">
             <p>Pour toute question concernant ces Conditions, contactez-nous à :</p>
             <div className="mt-3 space-y-1">
-              <p><span className="text-white font-medium">itkeys</span></p>
+              <p><span className="text-white font-medium">itkeys.net</span></p>
               <p>E-mail : <a href="mailto:contact@itkeys.net" className="text-[#16D9F5] hover:text-white transition-colors">contact@itkeys.net</a></p>
               <p>Site web : <a href="https://aiguidia.com" target="_blank" rel="noopener noreferrer" className="text-[#16D9F5] hover:text-white transition-colors">aiguidia.com</a></p>
             </div>

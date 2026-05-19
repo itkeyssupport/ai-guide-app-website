@@ -30,7 +30,7 @@ function PrivacyPage() {
           <div className="glass rounded-2xl p-6 space-y-3 text-muted-foreground">
             <p><span className="text-white font-medium">App name:</span> AI Guide</p>
             <p><span className="text-white font-medium">Website:</span> aiguidia.com</p>
-            <p><span className="text-white font-medium">Owner:</span> itkeys</p>
+            <p><span className="text-white font-medium">Owner:</span> itkeys.net</p>
             <p><span className="text-white font-medium">Contact:</span> contact@itkeys.net</p>
           </div>
 
@@ -218,18 +218,7 @@ function PrivacyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="13. Children and Teen Users">
-            <p>AI Guide is intended for users aged 13 and older.</p>
-            <p>If you are under 13, you should not use the app or create an account.</p>
-            <p>
-              If you are between 13 and 17, you should use the app with permission from a parent or legal guardian.
-            </p>
-            <p>
-              If we discover that we collected personal information from a child under 13 without proper consent, we will take reasonable steps to delete that information.
-            </p>
-          </LegalSection>
-
-          <LegalSection title="14. Your Rights">
+          <LegalSection title="13. Your Rights">
             <p>Depending on your location, you may have rights to:</p>
             <ul>
               <li>access your personal information;</li>
@@ -242,7 +231,7 @@ function PrivacyPage() {
             <p>To make a request, contact us at contact@itkeys.net.</p>
           </LegalSection>
 
-          <LegalSection title="15. Changes to This Privacy Policy">
+          <LegalSection title="14. Changes to This Privacy Policy">
             <p>
               We may update this Privacy Policy from time to time.
             </p>
@@ -251,10 +240,10 @@ function PrivacyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="16. Contact Us">
+          <LegalSection title="15. Contact Us">
             <p>For questions about this Privacy Policy, contact us at:</p>
             <div className="mt-3 space-y-1">
-              <p><span className="text-white font-medium">itkeys</span></p>
+              <p><span className="text-white font-medium">itkeys.net</span></p>
               <p>Email: <a href="mailto:contact@itkeys.net" className="text-[#16D9F5] hover:text-white transition-colors">contact@itkeys.net</a></p>
               <p>Website: <a href="https://itkeys.net" target="_blank" rel="noopener noreferrer" className="text-[#16D9F5] hover:text-white transition-colors">itkeys.net</a></p>
             </div>

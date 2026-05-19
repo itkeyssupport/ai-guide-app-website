@@ -30,7 +30,7 @@ function TermsPage() {
           <div className="glass rounded-2xl p-6 space-y-3 text-muted-foreground">
             <p><span className="text-white font-medium">App name:</span> AI Guide</p>
             <p><span className="text-white font-medium">Website:</span> aiguidia.com</p>
-            <p><span className="text-white font-medium">Owner:</span> itkeys</p>
+            <p><span className="text-white font-medium">Owner:</span> itkeys.net</p>
             <p><span className="text-white font-medium">Contact:</span> contact@itkeys.net</p>
           </div>
 
@@ -147,7 +147,7 @@ function TermsPage() {
 
           <LegalSection title="11. Intellectual Property">
             <p>
-              All original content, design, layout, text, graphics, and app features created by AI Guide are owned by itkeys or licensed to us.
+              All original content, design, layout, text, graphics, and app features created by AI Guide are owned by itkeys.net or licensed to us.
             </p>
             <p>You may use the app for personal learning purposes only.</p>
             <p>
@@ -208,7 +208,7 @@ function TermsPage() {
           <LegalSection title="18. Contact Us">
             <p>For questions about these Terms, contact us at:</p>
             <div className="mt-3 space-y-1">
-              <p><span className="text-white font-medium">itkeys</span></p>
+              <p><span className="text-white font-medium">itkeys.net</span></p>
               <p>Email: <a href="mailto:contact@itkeys.net" className="text-[#16D9F5] hover:text-white transition-colors">contact@itkeys.net</a></p>
               <p>Website: <a href="https://aiguidia.com" target="_blank" rel="noopener noreferrer" className="text-[#16D9F5] hover:text-white transition-colors">aiguidia.com</a></p>
             </div>

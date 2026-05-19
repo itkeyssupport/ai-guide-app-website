@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as NewsRouteImport } from './routes/news'
 import { Route as LearnRouteImport } from './routes/learn'
 import { Route as FrRouteImport } from './routes/fr'
 import { Route as FeaturesRouteImport } from './routes/features'
@@ -25,6 +26,7 @@ import { Route as FrIndexRouteImport } from './routes/fr/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
 import { Route as FrTermsRouteImport } from './routes/fr/terms'
 import { Route as FrPrivacyPolicyRouteImport } from './routes/fr/privacy-policy'
+import { Route as FrNewsRouteImport } from './routes/fr/news'
 import { Route as FrLearnRouteImport } from './routes/fr/learn'
 import { Route as FrFeaturesRouteImport } from './routes/fr/features'
 import { Route as FrDownloadRouteImport } from './routes/fr/download'
@@ -34,6 +36,7 @@ import { Route as FrCompareRouteImport } from './routes/fr/compare'
 import { Route as FrAiToolsRouteImport } from './routes/fr/ai-tools'
 import { Route as ArTermsRouteImport } from './routes/ar/terms'
 import { Route as ArPrivacyPolicyRouteImport } from './routes/ar/privacy-policy'
+import { Route as ArNewsRouteImport } from './routes/ar/news'
 import { Route as ArLearnRouteImport } from './routes/ar/learn'
 import { Route as ArFeaturesRouteImport } from './routes/ar/features'
 import { Route as ArDownloadRouteImport } from './routes/ar/download'
@@ -50,6 +53,11 @@ const TermsRoute = TermsRouteImport.update({
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewsRoute = NewsRouteImport.update({
+  id: '/news',
+  path: '/news',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LearnRoute = LearnRouteImport.update({
@@ -122,6 +130,11 @@ const FrPrivacyPolicyRoute = FrPrivacyPolicyRouteImport.update({
   path: '/privacy-policy',
   getParentRoute: () => FrRoute,
 } as any)
+const FrNewsRoute = FrNewsRouteImport.update({
+  id: '/news',
+  path: '/news',
+  getParentRoute: () => FrRoute,
+} as any)
 const FrLearnRoute = FrLearnRouteImport.update({
   id: '/learn',
   path: '/learn',
@@ -165,6 +178,11 @@ const ArTermsRoute = ArTermsRouteImport.update({
 const ArPrivacyPolicyRoute = ArPrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
+  getParentRoute: () => ArRoute,
+} as any)
+const ArNewsRoute = ArNewsRouteImport.update({
+  id: '/news',
+  path: '/news',
   getParentRoute: () => ArRoute,
 } as any)
 const ArLearnRoute = ArLearnRouteImport.update({
@@ -214,6 +232,7 @@ export interface FileRoutesByFullPath {
   '/features': typeof FeaturesRoute
   '/fr': typeof FrRouteWithChildren
   '/learn': typeof LearnRoute
+  '/news': typeof NewsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms': typeof TermsRoute
   '/ar/ai-tools': typeof ArAiToolsRoute
@@ -223,6 +242,7 @@ export interface FileRoutesByFullPath {
   '/ar/download': typeof ArDownloadRoute
   '/ar/features': typeof ArFeaturesRoute
   '/ar/learn': typeof ArLearnRoute
+  '/ar/news': typeof ArNewsRoute
   '/ar/privacy-policy': typeof ArPrivacyPolicyRoute
   '/ar/terms': typeof ArTermsRoute
   '/fr/ai-tools': typeof FrAiToolsRoute
@@ -232,6 +252,7 @@ export interface FileRoutesByFullPath {
   '/fr/download': typeof FrDownloadRoute
   '/fr/features': typeof FrFeaturesRoute
   '/fr/learn': typeof FrLearnRoute
+  '/fr/news': typeof FrNewsRoute
   '/fr/privacy-policy': typeof FrPrivacyPolicyRoute
   '/fr/terms': typeof FrTermsRoute
   '/ar/': typeof ArIndexRoute
@@ -246,6 +267,7 @@ export interface FileRoutesByTo {
   '/download': typeof DownloadRoute
   '/features': typeof FeaturesRoute
   '/learn': typeof LearnRoute
+  '/news': typeof NewsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms': typeof TermsRoute
   '/ar/ai-tools': typeof ArAiToolsRoute
@@ -255,6 +277,7 @@ export interface FileRoutesByTo {
   '/ar/download': typeof ArDownloadRoute
   '/ar/features': typeof ArFeaturesRoute
   '/ar/learn': typeof ArLearnRoute
+  '/ar/news': typeof ArNewsRoute
   '/ar/privacy-policy': typeof ArPrivacyPolicyRoute
   '/ar/terms': typeof ArTermsRoute
   '/fr/ai-tools': typeof FrAiToolsRoute
@@ -264,6 +287,7 @@ export interface FileRoutesByTo {
   '/fr/download': typeof FrDownloadRoute
   '/fr/features': typeof FrFeaturesRoute
   '/fr/learn': typeof FrLearnRoute
+  '/fr/news': typeof FrNewsRoute
   '/fr/privacy-policy': typeof FrPrivacyPolicyRoute
   '/fr/terms': typeof FrTermsRoute
   '/ar': typeof ArIndexRoute
@@ -281,6 +305,7 @@ export interface FileRoutesById {
   '/features': typeof FeaturesRoute
   '/fr': typeof FrRouteWithChildren
   '/learn': typeof LearnRoute
+  '/news': typeof NewsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms': typeof TermsRoute
   '/ar/ai-tools': typeof ArAiToolsRoute
@@ -290,6 +315,7 @@ export interface FileRoutesById {
   '/ar/download': typeof ArDownloadRoute
   '/ar/features': typeof ArFeaturesRoute
   '/ar/learn': typeof ArLearnRoute
+  '/ar/news': typeof ArNewsRoute
   '/ar/privacy-policy': typeof ArPrivacyPolicyRoute
   '/ar/terms': typeof ArTermsRoute
   '/fr/ai-tools': typeof FrAiToolsRoute
@@ -299,6 +325,7 @@ export interface FileRoutesById {
   '/fr/download': typeof FrDownloadRoute
   '/fr/features': typeof FrFeaturesRoute
   '/fr/learn': typeof FrLearnRoute
+  '/fr/news': typeof FrNewsRoute
   '/fr/privacy-policy': typeof FrPrivacyPolicyRoute
   '/fr/terms': typeof FrTermsRoute
   '/ar/': typeof ArIndexRoute
@@ -317,6 +344,7 @@ export interface FileRouteTypes {
     | '/features'
     | '/fr'
     | '/learn'
+    | '/news'
     | '/privacy-policy'
     | '/terms'
     | '/ar/ai-tools'
@@ -326,6 +354,7 @@ export interface FileRouteTypes {
     | '/ar/download'
     | '/ar/features'
     | '/ar/learn'
+    | '/ar/news'
     | '/ar/privacy-policy'
     | '/ar/terms'
     | '/fr/ai-tools'
@@ -335,6 +364,7 @@ export interface FileRouteTypes {
     | '/fr/download'
     | '/fr/features'
     | '/fr/learn'
+    | '/fr/news'
     | '/fr/privacy-policy'
     | '/fr/terms'
     | '/ar/'
@@ -349,6 +379,7 @@ export interface FileRouteTypes {
     | '/download'
     | '/features'
     | '/learn'
+    | '/news'
     | '/privacy-policy'
     | '/terms'
     | '/ar/ai-tools'
@@ -358,6 +389,7 @@ export interface FileRouteTypes {
     | '/ar/download'
     | '/ar/features'
     | '/ar/learn'
+    | '/ar/news'
     | '/ar/privacy-policy'
     | '/ar/terms'
     | '/fr/ai-tools'
@@ -367,6 +399,7 @@ export interface FileRouteTypes {
     | '/fr/download'
     | '/fr/features'
     | '/fr/learn'
+    | '/fr/news'
     | '/fr/privacy-policy'
     | '/fr/terms'
     | '/ar'
@@ -383,6 +416,7 @@ export interface FileRouteTypes {
     | '/features'
     | '/fr'
     | '/learn'
+    | '/news'
     | '/privacy-policy'
     | '/terms'
     | '/ar/ai-tools'
@@ -392,6 +426,7 @@ export interface FileRouteTypes {
     | '/ar/download'
     | '/ar/features'
     | '/ar/learn'
+    | '/ar/news'
     | '/ar/privacy-policy'
     | '/ar/terms'
     | '/fr/ai-tools'
@@ -401,6 +436,7 @@ export interface FileRouteTypes {
     | '/fr/download'
     | '/fr/features'
     | '/fr/learn'
+    | '/fr/news'
     | '/fr/privacy-policy'
     | '/fr/terms'
     | '/ar/'
@@ -418,6 +454,7 @@ export interface RootRouteChildren {
   FeaturesRoute: typeof FeaturesRoute
   FrRoute: typeof FrRouteWithChildren
   LearnRoute: typeof LearnRoute
+  NewsRoute: typeof NewsRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   TermsRoute: typeof TermsRoute
 }
@@ -436,6 +473,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/news': {
+      id: '/news'
+      path: '/news'
+      fullPath: '/news'
+      preLoaderRoute: typeof NewsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/learn': {
@@ -536,6 +580,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FrPrivacyPolicyRouteImport
       parentRoute: typeof FrRoute
     }
+    '/fr/news': {
+      id: '/fr/news'
+      path: '/news'
+      fullPath: '/fr/news'
+      preLoaderRoute: typeof FrNewsRouteImport
+      parentRoute: typeof FrRoute
+    }
     '/fr/learn': {
       id: '/fr/learn'
       path: '/learn'
@@ -599,6 +650,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArPrivacyPolicyRouteImport
       parentRoute: typeof ArRoute
     }
+    '/ar/news': {
+      id: '/ar/news'
+      path: '/news'
+      fullPath: '/ar/news'
+      preLoaderRoute: typeof ArNewsRouteImport
+      parentRoute: typeof ArRoute
+    }
     '/ar/learn': {
       id: '/ar/learn'
       path: '/learn'
@@ -659,6 +717,7 @@ interface ArRouteChildren {
   ArDownloadRoute: typeof ArDownloadRoute
   ArFeaturesRoute: typeof ArFeaturesRoute
   ArLearnRoute: typeof ArLearnRoute
+  ArNewsRoute: typeof ArNewsRoute
   ArPrivacyPolicyRoute: typeof ArPrivacyPolicyRoute
   ArTermsRoute: typeof ArTermsRoute
   ArIndexRoute: typeof ArIndexRoute
@@ -672,6 +731,7 @@ const ArRouteChildren: ArRouteChildren = {
   ArDownloadRoute: ArDownloadRoute,
   ArFeaturesRoute: ArFeaturesRoute,
   ArLearnRoute: ArLearnRoute,
+  ArNewsRoute: ArNewsRoute,
   ArPrivacyPolicyRoute: ArPrivacyPolicyRoute,
   ArTermsRoute: ArTermsRoute,
   ArIndexRoute: ArIndexRoute,
@@ -687,6 +747,7 @@ interface FrRouteChildren {
   FrDownloadRoute: typeof FrDownloadRoute
   FrFeaturesRoute: typeof FrFeaturesRoute
   FrLearnRoute: typeof FrLearnRoute
+  FrNewsRoute: typeof FrNewsRoute
   FrPrivacyPolicyRoute: typeof FrPrivacyPolicyRoute
   FrTermsRoute: typeof FrTermsRoute
   FrIndexRoute: typeof FrIndexRoute
@@ -700,6 +761,7 @@ const FrRouteChildren: FrRouteChildren = {
   FrDownloadRoute: FrDownloadRoute,
   FrFeaturesRoute: FrFeaturesRoute,
   FrLearnRoute: FrLearnRoute,
+  FrNewsRoute: FrNewsRoute,
   FrPrivacyPolicyRoute: FrPrivacyPolicyRoute,
   FrTermsRoute: FrTermsRoute,
   FrIndexRoute: FrIndexRoute,
@@ -718,6 +780,7 @@ const rootRouteChildren: RootRouteChildren = {
   FeaturesRoute: FeaturesRoute,
   FrRoute: FrRouteWithChildren,
   LearnRoute: LearnRoute,
+  NewsRoute: NewsRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   TermsRoute: TermsRoute,
 }

@@ -30,7 +30,7 @@ function PrivacyPageFr() {
           <div className="glass rounded-2xl p-6 space-y-3 text-muted-foreground">
             <p><span className="text-white font-medium">Nom de l'application :</span> AI Guide</p>
             <p><span className="text-white font-medium">Site web :</span> aiguidia.com</p>
-            <p><span className="text-white font-medium">Propriétaire :</span> itkeys</p>
+            <p><span className="text-white font-medium">Propriétaire :</span> itkeys.net</p>
             <p><span className="text-white font-medium">Contact :</span> contact@itkeys.net</p>
           </div>
 
@@ -175,14 +175,7 @@ function PrivacyPageFr() {
             <p>Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée. Nous ne pouvons donc pas garantir une sécurité absolue.</p>
           </S>
 
-          <S title="13. Enfants et adolescents">
-            <p>AI Guide est destinée aux utilisateurs âgés de 13 ans et plus.</p>
-            <p>Si vous avez moins de 13 ans, vous ne devez pas utiliser l'application ni créer de compte.</p>
-            <p>Si vous avez entre 13 et 17 ans, vous devez utiliser l'application avec l'autorisation d'un parent ou d'un tuteur légal.</p>
-            <p>Si nous découvrons que nous avons collecté des informations personnelles auprès d'un enfant de moins de 13 ans sans consentement approprié, nous prendrons des mesures raisonnables pour supprimer ces informations.</p>
-          </S>
-
-          <S title="14. Vos droits">
+          <S title="13. Vos droits">
             <p>Selon votre localisation, vous pouvez avoir le droit de :</p>
             <ul>
               <li>accéder à vos informations personnelles ;</li>
@@ -195,15 +188,15 @@ function PrivacyPageFr() {
             <p>Pour exercer ces droits, contactez-nous à contact@itkeys.net.</p>
           </S>
 
-          <S title="15. Modifications de cette Politique de confidentialité">
+          <S title="14. Modifications de cette Politique de confidentialité">
             <p>Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre.</p>
             <p>Lorsque nous la mettons à jour, nous modifions la date de "Dernière mise à jour" ci-dessus. La poursuite de l'utilisation de l'application après ces modifications signifie que vous acceptez la Politique mise à jour.</p>
           </S>
 
-          <S title="16. Nous contacter">
+          <S title="15. Nous contacter">
             <p>Pour toute question concernant cette Politique de confidentialité, contactez-nous à :</p>
             <div className="mt-3 space-y-1">
-              <p><span className="text-white font-medium">itkeys</span></p>
+              <p><span className="text-white font-medium">itkeys.net</span></p>
               <p>E-mail : <a href="mailto:contact@itkeys.net" className="text-[#16D9F5] hover:text-white transition-colors">contact@itkeys.net</a></p>
               <p>Site web : <a href="https://aiguidia.com" target="_blank" rel="noopener noreferrer" className="text-[#16D9F5] hover:text-white transition-colors">aiguidia.com</a></p>
             </div>

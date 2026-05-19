@@ -30,7 +30,7 @@ function PrivacyPageAr() {
           <div className="glass rounded-2xl p-6 space-y-3 text-muted-foreground">
             <p><span className="text-white font-medium">اسم التطبيق:</span> AI Guide</p>
             <p><span className="text-white font-medium">الموقع الإلكتروني:</span> aiguidia.com</p>
-            <p><span className="text-white font-medium">المالك:</span> itkeys</p>
+            <p><span className="text-white font-medium">المالك:</span> itkeys.net</p>
             <p><span className="text-white font-medium">للتواصل:</span> contact@itkeys.net</p>
           </div>
 
@@ -175,14 +175,7 @@ function PrivacyPageAr() {
             <p>ومع ذلك، لا توجد طريقة نقل عبر الإنترنت أو تخزين إلكتروني آمنة بنسبة 100%. لذلك، لا يمكننا ضمان الأمان المطلق.</p>
           </S>
 
-          <S title="13. الأطفال والمستخدمون المراهقون">
-            <p>AI Guide مخصص للمستخدمين الذين تبلغ أعمارهم 13 سنة فما فوق.</p>
-            <p>إذا كان عمرك أقل من 13 سنة، فلا يجب عليك استخدام التطبيق أو إنشاء حساب.</p>
-            <p>إذا كان عمرك بين 13 و17 سنة، فيجب عليك استخدام التطبيق بإذن من أحد الوالدين أو الوصي القانوني.</p>
-            <p>إذا اكتشفنا أننا جمعنا معلومات شخصية من طفل يقل عمره عن 13 سنة دون موافقة مناسبة، فسنتخذ خطوات معقولة لحذف تلك المعلومات.</p>
-          </S>
-
-          <S title="14. حقوقك">
+          <S title="13. حقوقك">
             <p>حسب موقعك، قد تكون لديك حقوق في:</p>
             <ul>
               <li>الوصول إلى معلوماتك الشخصية؛</li>
@@ -195,15 +188,15 @@ function PrivacyPageAr() {
             <p>لممارسة هذه الحقوق، تواصل معنا عبر contact@itkeys.net.</p>
           </S>
 
-          <S title="15. التغييرات على سياسة الخصوصية">
+          <S title="14. التغييرات على سياسة الخصوصية">
             <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر.</p>
             <p>عند تحديثها، سنقوم بتغيير تاريخ "آخر تحديث" أعلاه. استمرارك في استخدام التطبيق بعد التغييرات يعني أنك تقبل السياسة المحدثة.</p>
           </S>
 
-          <S title="16. التواصل معنا">
+          <S title="15. التواصل معنا">
             <p>لأي أسئلة بخصوص سياسة الخصوصية هذه، يمكنك التواصل معنا عبر:</p>
             <div className="mt-3 space-y-1">
-              <p><span className="text-white font-medium">itkeys</span></p>
+              <p><span className="text-white font-medium">itkeys.net</span></p>
               <p>البريد الإلكتروني: <a href="mailto:contact@itkeys.net" className="text-[#16D9F5] hover:text-white transition-colors">contact@itkeys.net</a></p>
               <p>الموقع الإلكتروني: <a href="https://aiguidia.com" target="_blank" rel="noopener noreferrer" className="text-[#16D9F5] hover:text-white transition-colors">aiguidia.com</a></p>
             </div>

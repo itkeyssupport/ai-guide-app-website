@@ -7,10 +7,10 @@ import { translations } from "@/i18n/translations";
 
 const PRODUCT_BASE = ["/features", "/ai-tools", "/compare", "/learn", "/download"];
 const COMPANY_BASE = ["/contact", "/privacy-policy", "/terms", "/delete-account"];
-const RESOURCES_BASE = ["/learn", "/compare", "/ai-tools", "/features"];
+const RESOURCES_BASE = ["/learn", "/compare", "/ai-tools", "/news"];
 
 // Routes that have translated versions
-const TRANSLATED_ROUTES = new Set(["/features", "/ai-tools", "/compare", "/learn", "/download", "/contact", "/privacy-policy", "/terms", "/delete-account"]);
+const TRANSLATED_ROUTES = new Set(["/features", "/ai-tools", "/compare", "/learn", "/download", "/contact", "/privacy-policy", "/terms", "/delete-account", "/news"]);
 
 export function Footer() {
   const lang = useCurrentLang();

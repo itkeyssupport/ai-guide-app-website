@@ -30,7 +30,7 @@ function TermsPageAr() {
           <div className="glass rounded-2xl p-6 space-y-3 text-muted-foreground">
             <p><span className="text-white font-medium">اسم التطبيق:</span> AI Guide</p>
             <p><span className="text-white font-medium">الموقع الإلكتروني:</span> aiguidia.com</p>
-            <p><span className="text-white font-medium">المالك:</span> itkeys</p>
+            <p><span className="text-white font-medium">المالك:</span> itkeys.net</p>
             <p><span className="text-white font-medium">للتواصل:</span> contact@itkeys.net</p>
           </div>
 
@@ -118,7 +118,7 @@ function TermsPageAr() {
           </S>
 
           <S title="11. الملكية الفكرية">
-            <p>جميع المحتويات الأصلية، والتصميم، والتخطيط، والنصوص، والعناصر الرسومية، وميزات التطبيق التي أنشأها AI Guide مملوكة لـ itkeys أو مرخصة لنا.</p>
+            <p>جميع المحتويات الأصلية، والتصميم، والتخطيط، والنصوص، والعناصر الرسومية، وميزات التطبيق التي أنشأها AI Guide مملوكة لـ itkeys.net أو مرخصة لنا.</p>
             <p>يمكنك استخدام التطبيق لأغراض التعلم الشخصي فقط.</p>
             <p>لا يجوز لك نسخ أو إعادة بيع أو إعادة توزيع أو إعادة إنتاج محتوانا دون إذن كتابي، إلا عندما يسمح القانون بذلك.</p>
           </S>
@@ -164,7 +164,7 @@ function TermsPageAr() {
           <S title="18. التواصل معنا">
             <p>لأي أسئلة بخصوص هذه الشروط، يمكنك التواصل معنا عبر:</p>
             <div className="mt-3 space-y-1">
-              <p><span className="text-white font-medium">itkeys</span></p>
+              <p><span className="text-white font-medium">itkeys.net</span></p>
               <p>البريد الإلكتروني: <a href="mailto:contact@itkeys.net" className="text-[#16D9F5] hover:text-white transition-colors">contact@itkeys.net</a></p>
               <p>الموقع الإلكتروني: <a href="https://aiguidia.com" target="_blank" rel="noopener noreferrer" className="text-[#16D9F5] hover:text-white transition-colors">aiguidia.com</a></p>
             </div>

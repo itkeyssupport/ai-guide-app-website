@@ -20,7 +20,7 @@ function getTargetPath(targetLang: string, currentPath: string): string {
   return "/";
 }
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ inline = false }: { inline?: boolean }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const { pathname } = useLocation();
@@ -39,6 +39,27 @@ export function LanguageSwitcher() {
     if (open) document.addEventListener("mousedown", onOutside);
     return () => document.removeEventListener("mousedown", onOutside);
   }, [open]);
+
+  if (inline) {
+    return (
+      <div className="flex gap-1 rounded-xl border border-white/10 p-1 bg-white/5">
+        {LANGS.map((lang) => (
+          <button
+            key={lang.code}
+            type="button"
+            onClick={() => navigate({ to: getTargetPath(lang.code, pathname) as any })}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
+              active === lang.code
+                ? "bg-white/15 text-white"
+                : "text-muted-foreground hover:text-white hover:bg-white/8"
+            }`}
+          >
+            {lang.code.toUpperCase()}
+          </button>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div ref={ref} className="relative">

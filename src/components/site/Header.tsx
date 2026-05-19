@@ -124,7 +124,7 @@ export function Header() {
             ))}
             <div className="mt-2 flex items-center gap-2 px-2">
               <ThemeToggle />
-              <LanguageSwitcher />
+              <LanguageSwitcher inline />
             </div>
             <a
               href={GOOGLE_PLAY_URL}

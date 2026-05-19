@@ -249,7 +249,8 @@ export function HomeLanding({ lang }: { lang: Lang }) {
 
         <div className="relative">
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-80 bg-gradient-brand opacity-8 blur-3xl rounded-full -z-10 animate-pulse-glow" />
-          <div className="flex items-end justify-center gap-3 sm:gap-5 overflow-x-auto pb-6 scroll-smooth snap-x snap-mandatory px-4">
+          <div className="overflow-x-auto pb-6 scroll-smooth snap-x snap-mandatory">
+          <div className="flex items-end justify-start sm:justify-center gap-3 sm:gap-5 px-4 w-max sm:w-full mx-auto">
             {APP_SCREENS.map((screen, i) => {
               const isCenter = screen.featured;
               return (
@@ -263,6 +264,7 @@ export function HomeLanding({ lang }: { lang: Lang }) {
                 />
               );
             })}
+          </div>
           </div>
           <div className="mt-12 grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {T.appFeatures.map((f, i) => {
