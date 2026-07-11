@@ -76,6 +76,16 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://aiguidia.com/Teropdf/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://aiguidia.com/Teropdf/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://aiguidia.com/delete-account</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://aiguidia.com/delete-account"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://aiguidia.com/fr/delete-account"/>

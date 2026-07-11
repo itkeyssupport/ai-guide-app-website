@@ -21,6 +21,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CompareRouteImport } from './routes/compare'
 import { Route as ArRouteImport } from './routes/ar'
 import { Route as AiToolsRouteImport } from './routes/ai-tools'
+import { Route as TeropdfRouteImport } from './routes/Teropdf'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as FrIndexRouteImport } from './routes/fr/index'
 import { Route as ArIndexRouteImport } from './routes/ar/index'
@@ -44,6 +45,8 @@ import { Route as ArDeleteAccountRouteImport } from './routes/ar/delete-account'
 import { Route as ArContactRouteImport } from './routes/ar/contact'
 import { Route as ArCompareRouteImport } from './routes/ar/compare'
 import { Route as ArAiToolsRouteImport } from './routes/ar/ai-tools'
+import { Route as TeropdfTermsRouteImport } from './routes/Teropdf/terms'
+import { Route as TeropdfPrivacyPolicyRouteImport } from './routes/Teropdf/privacy-policy'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -103,6 +106,11 @@ const ArRoute = ArRouteImport.update({
 const AiToolsRoute = AiToolsRouteImport.update({
   id: '/ai-tools',
   path: '/ai-tools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeropdfRoute = TeropdfRouteImport.update({
+  id: '/Teropdf',
+  path: '/Teropdf',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -220,9 +228,20 @@ const ArAiToolsRoute = ArAiToolsRouteImport.update({
   path: '/ai-tools',
   getParentRoute: () => ArRoute,
 } as any)
+const TeropdfTermsRoute = TeropdfTermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => TeropdfRoute,
+} as any)
+const TeropdfPrivacyPolicyRoute = TeropdfPrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => TeropdfRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/Teropdf': typeof TeropdfRouteWithChildren
   '/ai-tools': typeof AiToolsRoute
   '/ar': typeof ArRouteWithChildren
   '/compare': typeof CompareRoute
@@ -235,6 +254,8 @@ export interface FileRoutesByFullPath {
   '/news': typeof NewsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms': typeof TermsRoute
+  '/Teropdf/privacy-policy': typeof TeropdfPrivacyPolicyRoute
+  '/Teropdf/terms': typeof TeropdfTermsRoute
   '/ar/ai-tools': typeof ArAiToolsRoute
   '/ar/compare': typeof ArCompareRoute
   '/ar/contact': typeof ArContactRoute
@@ -260,6 +281,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/Teropdf': typeof TeropdfRouteWithChildren
   '/ai-tools': typeof AiToolsRoute
   '/compare': typeof CompareRoute
   '/contact': typeof ContactRoute
@@ -270,6 +292,8 @@ export interface FileRoutesByTo {
   '/news': typeof NewsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms': typeof TermsRoute
+  '/Teropdf/privacy-policy': typeof TeropdfPrivacyPolicyRoute
+  '/Teropdf/terms': typeof TeropdfTermsRoute
   '/ar/ai-tools': typeof ArAiToolsRoute
   '/ar/compare': typeof ArCompareRoute
   '/ar/contact': typeof ArContactRoute
@@ -296,6 +320,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/Teropdf': typeof TeropdfRouteWithChildren
   '/ai-tools': typeof AiToolsRoute
   '/ar': typeof ArRouteWithChildren
   '/compare': typeof CompareRoute
@@ -308,6 +333,8 @@ export interface FileRoutesById {
   '/news': typeof NewsRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/terms': typeof TermsRoute
+  '/Teropdf/privacy-policy': typeof TeropdfPrivacyPolicyRoute
+  '/Teropdf/terms': typeof TeropdfTermsRoute
   '/ar/ai-tools': typeof ArAiToolsRoute
   '/ar/compare': typeof ArCompareRoute
   '/ar/contact': typeof ArContactRoute
@@ -335,6 +362,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/Teropdf'
     | '/ai-tools'
     | '/ar'
     | '/compare'
@@ -347,6 +375,8 @@ export interface FileRouteTypes {
     | '/news'
     | '/privacy-policy'
     | '/terms'
+    | '/Teropdf/privacy-policy'
+    | '/Teropdf/terms'
     | '/ar/ai-tools'
     | '/ar/compare'
     | '/ar/contact'
@@ -372,6 +402,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/Teropdf'
     | '/ai-tools'
     | '/compare'
     | '/contact'
@@ -382,6 +413,8 @@ export interface FileRouteTypes {
     | '/news'
     | '/privacy-policy'
     | '/terms'
+    | '/Teropdf/privacy-policy'
+    | '/Teropdf/terms'
     | '/ar/ai-tools'
     | '/ar/compare'
     | '/ar/contact'
@@ -407,6 +440,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/Teropdf'
     | '/ai-tools'
     | '/ar'
     | '/compare'
@@ -419,6 +453,8 @@ export interface FileRouteTypes {
     | '/news'
     | '/privacy-policy'
     | '/terms'
+    | '/Teropdf/privacy-policy'
+    | '/Teropdf/terms'
     | '/ar/ai-tools'
     | '/ar/compare'
     | '/ar/contact'
@@ -445,6 +481,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  TeropdfRoute: typeof TeropdfRouteWithChildren
   AiToolsRoute: typeof AiToolsRoute
   ArRoute: typeof ArRouteWithChildren
   CompareRoute: typeof CompareRoute
@@ -543,6 +580,13 @@ declare module '@tanstack/react-router' {
       path: '/ai-tools'
       fullPath: '/ai-tools'
       preLoaderRoute: typeof AiToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/Teropdf': {
+      id: '/Teropdf'
+      path: '/Teropdf'
+      fullPath: '/Teropdf'
+      preLoaderRoute: typeof TeropdfRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -706,8 +750,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArAiToolsRouteImport
       parentRoute: typeof ArRoute
     }
+    '/Teropdf/terms': {
+      id: '/Teropdf/terms'
+      path: '/terms'
+      fullPath: '/Teropdf/terms'
+      preLoaderRoute: typeof TeropdfTermsRouteImport
+      parentRoute: typeof TeropdfRoute
+    }
+    '/Teropdf/privacy-policy': {
+      id: '/Teropdf/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/Teropdf/privacy-policy'
+      preLoaderRoute: typeof TeropdfPrivacyPolicyRouteImport
+      parentRoute: typeof TeropdfRoute
+    }
   }
 }
+
+interface TeropdfRouteChildren {
+  TeropdfPrivacyPolicyRoute: typeof TeropdfPrivacyPolicyRoute
+  TeropdfTermsRoute: typeof TeropdfTermsRoute
+}
+
+const TeropdfRouteChildren: TeropdfRouteChildren = {
+  TeropdfPrivacyPolicyRoute: TeropdfPrivacyPolicyRoute,
+  TeropdfTermsRoute: TeropdfTermsRoute,
+}
+
+const TeropdfRouteWithChildren =
+  TeropdfRoute._addFileChildren(TeropdfRouteChildren)
 
 interface ArRouteChildren {
   ArAiToolsRoute: typeof ArAiToolsRoute
@@ -771,6 +842,7 @@ const FrRouteWithChildren = FrRoute._addFileChildren(FrRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  TeropdfRoute: TeropdfRouteWithChildren,
   AiToolsRoute: AiToolsRoute,
   ArRoute: ArRouteWithChildren,
   CompareRoute: CompareRoute,
