@@ -22,7 +22,7 @@ function PrivacyPage() {
       <PageHero
         eyebrow="Legal"
         title="Privacy Policy"
-        description="Last updated: May 19, 2026"
+        description="Last updated: July 19, 2026"
       />
       <Section className="!pt-0">
         <article className="max-w-3xl mx-auto space-y-8 text-sm leading-7">
@@ -60,15 +60,17 @@ function PrivacyPage() {
             <p>We may collect the following types of information depending on how you use the app.</p>
 
             <h3 className="text-white font-semibold mt-4">Account Information</h3>
-            <p>When you create an account or sign in, we may collect:</p>
+            <p>You can create an account or sign in using email and password, Google Sign-In, or Sign in with Apple. Depending on the method you choose, we may collect:</p>
             <ul>
-              <li>email address;</li>
+              <li>email address (or a private, anonymous relay email address if you choose to hide your email with Sign in with Apple);</li>
               <li>authentication ID;</li>
               <li>display name, if provided;</li>
               <li>profile information, if provided;</li>
               <li>login and account status information.</li>
             </ul>
-            <p>Authentication is handled using Supabase.</p>
+            <p>
+              If you use Sign in with Apple, Apple shares with us only the name and email address you approve at sign-in, and we use this information solely to create and manage your AI Guide account. Authentication is handled using Supabase, which securely manages sign-in for all supported methods.
+            </p>
 
             <h3 className="text-white font-semibold mt-4">Learning and Progress Data</h3>
             <p>To provide learning features, we may store:</p>
@@ -130,6 +132,16 @@ function PrivacyPage() {
               Supabase Auth provides authentication and user-management tools, and Supabase explains that its services may process personal information according to its privacy notice and, for customer data, as a processor under customer instructions.
             </p>
 
+            <h3 className="text-white font-semibold mt-4">Sign in with Apple</h3>
+            <p>
+              We offer Sign in with Apple as a sign-in option. When you use it, Apple shares only the information you approve, typically your name and email address, or an anonymous, private relay email address if you choose to keep your email hidden. This information is used only to create and manage your account and is not used for advertising profiling.
+            </p>
+
+            <h3 className="text-white font-semibold mt-4">Google Sign-In</h3>
+            <p>
+              We offer Google Sign-In as a sign-in option. When you use it, Google shares the basic profile information you approve, such as your name and email address, which we use to create and manage your account.
+            </p>
+
             <h3 className="text-white font-semibold mt-4">Google AdMob</h3>
             <p>
               We use Google AdMob to display ads in the app. AdMob may collect or process information such as advertising identifiers, IP address, device information, ad interactions, and diagnostic data.
@@ -148,6 +160,9 @@ function PrivacyPage() {
             </p>
             <p>
               We do not control every ad shown by Google AdMob, but we aim to use advertising in a way that does not interfere with the main learning experience.
+            </p>
+            <p>
+              On iOS, before any data is used to track you across other companies' apps or websites for advertising purposes, we request your permission through Apple's App Tracking Transparency framework. You can change this permission at any time in your device Settings.
             </p>
           </LegalSection>
 
@@ -183,6 +198,7 @@ function PrivacyPage() {
             <p>We may share or process information with trusted service providers only when needed to operate the app, including:</p>
             <ul>
               <li>Supabase for authentication, database, and storage;</li>
+              <li>Apple and Google for Sign in with Apple and Google Sign-In authentication;</li>
               <li>Google AdMob for advertising;</li>
               <li>analytics, hosting, or security providers if added in the future;</li>
               <li>legal authorities if required by law.</li>

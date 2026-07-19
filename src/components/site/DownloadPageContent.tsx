@@ -3,7 +3,7 @@ import { SiteLayout, Section } from "./Layout";
 import { PageHero } from "./PageHero";
 import { DownloadButtons } from "./DownloadButtons";
 import { translations, type Lang } from "@/i18n/translations";
-import { GOOGLE_PLAY_URL, SITE } from "@/config/site";
+import { GOOGLE_PLAY_URL, APP_STORE_URL, SITE, isPlaceholder } from "@/config/site";
 
 export function DownloadPageContent({ lang }: { lang: Lang }) {
   const T = translations[lang];
@@ -32,23 +32,42 @@ export function DownloadPageContent({ lang }: { lang: Lang }) {
           </div>
 
           <div className="glass rounded-3xl p-8 sm:p-10 text-center flex flex-col items-center justify-center">
-            <a
-              href={GOOGLE_PLAY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-2xl bg-white p-4 block hover:scale-105 transition-transform"
-              aria-label="Scan QR code to download AI Guide on Google Play"
-            >
-              <img
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(GOOGLE_PLAY_URL)}&qzone=1&margin=4`}
-                alt="QR code for AI Guide on Google Play"
-                width={160}
-                height={160}
-                className="rounded-lg"
-              />
-            </a>
-            <h3 className="mt-6 text-lg font-semibold text-white">{T.downloadScanTitle}</h3>
+            <h3 className="text-lg font-semibold text-white">{T.downloadScanTitle}</h3>
             <p className="mt-2 text-sm text-muted-foreground max-w-xs">{T.downloadScanDesc}</p>
+            <div className="mt-6 flex flex-wrap items-start justify-center gap-6">
+              <a
+                href={GOOGLE_PLAY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl bg-white p-4 block hover:scale-105 transition-transform"
+                aria-label="Scan QR code to download AI Guide on Google Play"
+              >
+                <img
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(GOOGLE_PLAY_URL)}&qzone=1&margin=4`}
+                  alt="QR code for AI Guide on Google Play"
+                  width={160}
+                  height={160}
+                  className="rounded-lg"
+                />
+              </a>
+              {!isPlaceholder(APP_STORE_URL) && (
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-2xl bg-white p-4 block hover:scale-105 transition-transform"
+                  aria-label="Scan QR code to download AI Guide on the App Store"
+                >
+                  <img
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(APP_STORE_URL)}&qzone=1&margin=4`}
+                    alt="QR code for AI Guide on the App Store"
+                    width={160}
+                    height={160}
+                    className="rounded-lg"
+                  />
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </Section>

@@ -6,7 +6,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 import { useCurrentLang } from "@/hooks/useCurrentLang";
 import { translations } from "@/i18n/translations";
-import { NAV_LINKS, GOOGLE_PLAY_URL } from "@/config/site";
+import { NAV_LINKS } from "@/config/site";
 
 function langPrefix(lang: string) {
   if (lang === "fr") return "/fr";
@@ -78,15 +78,13 @@ export function Header() {
           <div className="hidden md:flex items-center gap-1">
             <ThemeToggle />
             <LanguageSwitcher />
-            <a
-              href={GOOGLE_PLAY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to={`${prefix}/download` as any}
               className="ml-1 inline-flex items-center gap-2 rounded-full bg-gradient-brand px-5 py-2.5 text-sm font-semibold text-[#07112F] hover:opacity-90 transition-opacity shadow-md shadow-purple-500/20"
             >
               <Download className="h-3.5 w-3.5" />
               {T.headerDownload}
-            </a>
+            </Link>
           </div>
 
           <button
@@ -126,15 +124,13 @@ export function Header() {
               <ThemeToggle />
               <LanguageSwitcher inline />
             </div>
-            <a
-              href={GOOGLE_PLAY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to={`${prefix}/download` as any}
               className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-brand px-5 py-3 text-sm font-semibold text-[#07112F] shadow-md"
             >
               <Download className="h-4 w-4" />
               {T.headerDownload}
-            </a>
+            </Link>
           </nav>
         </div>
       </div>

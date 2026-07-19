@@ -22,7 +22,7 @@ function TermsPage() {
       <PageHero
         eyebrow="Legal"
         title="Terms of Use"
-        description="Last updated: May 19, 2026"
+        description="Last updated: July 19, 2026"
       />
       <Section className="!pt-0">
         <article className="max-w-3xl mx-auto space-y-8 text-sm leading-7">
@@ -67,7 +67,7 @@ function TermsPage() {
 
           <LegalSection title="4. Accounts">
             <p>
-              Some features may require an account, including progress tracking, bookmarks, streaks, profile features, and syncing across devices.
+              Some features may require an account, including progress tracking, bookmarks, streaks, profile features, and syncing across devices. You can create an account or sign in using email and password, Google Sign-In, or Sign in with Apple.
             </p>
             <p>You agree to:</p>
             <ul>
@@ -115,6 +115,7 @@ function TermsPage() {
             <p>AI Guide uses third-party services, including:</p>
             <ul>
               <li>Supabase for login, authentication, database storage, course content, and progress tracking;</li>
+              <li>Sign in with Apple and Google Sign-In for account authentication;</li>
               <li>Google AdMob for advertising.</li>
             </ul>
             <p>

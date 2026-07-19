@@ -344,7 +344,7 @@ const en: LangTranslations = {
   downloadInstallDesc: "One tap to start your AI learning journey. The app is built for beginners. No technical background required.",
   downloadFeatureItems: ["Step-by-step guides for popular AI tools", "AI tool comparisons", "Quizzes and progress tracking", "Latest AI news", "Multilingual support"],
   downloadScanTitle: "Scan to download",
-  downloadScanDesc: "Open your phone camera and point it at the code to open AI Guide on Google Play.",
+  downloadScanDesc: "Open your phone camera and point it at a code to open AI Guide on Google Play or the App Store.",
 };
 
 const fr: LangTranslations = {
@@ -538,7 +538,7 @@ const fr: LangTranslations = {
   downloadInstallDesc: "En un seul appui pour démarrer votre parcours d'apprentissage de l'IA. L'application est conçue pour les débutants. Aucune connaissance technique requise.",
   downloadFeatureItems: ["Guides étape par étape pour les outils IA populaires", "Comparatifs d'outils IA", "Quiz et suivi de progression", "Dernières actualités IA", "Support multilingue"],
   downloadScanTitle: "Scannez pour télécharger",
-  downloadScanDesc: "Ouvrez l'appareil photo de votre téléphone et pointez-le vers le code pour ouvrir AI Guide sur Google Play.",
+  downloadScanDesc: "Ouvrez l'appareil photo de votre téléphone et pointez-le vers un code pour ouvrir AI Guide sur Google Play ou l'App Store.",
 };
 
 const ar: LangTranslations = {
@@ -732,7 +732,7 @@ const ar: LangTranslations = {
   downloadInstallDesc: "نقرة واحدة لبدء رحلتك في تعلم الذكاء الاصطناعي. التطبيق مصمم للمبتدئين. لا خلفية تقنية مطلوبة.",
   downloadFeatureItems: ["أدلة خطوة بخطوة لأدوات الذكاء الاصطناعي الشائعة", "مقارنات أدوات الذكاء الاصطناعي", "اختبارات وتتبع التقدم", "أحدث أخبار الذكاء الاصطناعي", "دعم متعدد اللغات"],
   downloadScanTitle: "امسح الرمز للتنزيل",
-  downloadScanDesc: "افتح كاميرا هاتفك وأشر إلى الرمز لفتح AI Guide على Google Play.",
+  downloadScanDesc: "افتح كاميرا هاتفك وأشر إلى أحد الرموز لفتح AI Guide على Google Play أو App Store.",
 };
 
 export const translations: Record<Lang, LangTranslations> = { en, fr, ar };

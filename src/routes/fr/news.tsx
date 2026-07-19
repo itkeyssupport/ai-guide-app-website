@@ -1,10 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout, Section } from "@/components/site/Layout";
 import { PageHero } from "@/components/site/PageHero";
 import { buildMeta, buildLinks } from "@/components/site/seo";
 import { Newspaper, Zap, TrendingUp, Bell, Download } from "lucide-react";
 import { CTASection } from "@/components/site/CTASection";
-import { GOOGLE_PLAY_URL } from "@/config/site";
 
 export const Route = createFileRoute("/fr/news")({
   head: () => ({
@@ -69,15 +68,13 @@ function NewsPageFr() {
             <p className="text-muted-foreground max-w-lg mx-auto">
               Pour consulter les dernières actualités IA, visitez notre application. Accédez aux actualités sélectionnées aux côtés de vos parcours d'apprentissage, comparaisons d'outils et guides, le tout en un seul endroit.
             </p>
-            <a
-              href={GOOGLE_PLAY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/fr/download"
               className="inline-flex items-center gap-2 rounded-full bg-gradient-brand px-6 py-3 text-sm font-semibold text-[#07112F] hover:opacity-90 transition-opacity shadow-md"
             >
               <Download className="h-4 w-4" />
               Télécharger AI Guide
-            </a>
+            </Link>
           </div>
 
         </div>

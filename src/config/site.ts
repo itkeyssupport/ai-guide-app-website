@@ -1,5 +1,5 @@
 export const GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=com.ai.guide";
-export const APP_STORE_URL = "REPLACE_WITH_APP_STORE_LINK";
+export const APP_STORE_URL = "https://apps.apple.com/app/id6791725953";
 
 export const SITE = {
   name: "AI Guide",

@@ -22,7 +22,7 @@ function PrivacyPageFr() {
       <PageHero
         eyebrow="Légal"
         title="Politique de confidentialité"
-        description="Dernière mise à jour : 19 mai 2026"
+        description="Dernière mise à jour : 19 juillet 2026"
       />
       <Section className="!pt-0">
         <article className="max-w-3xl mx-auto space-y-8 text-sm leading-7">
@@ -55,15 +55,17 @@ function PrivacyPageFr() {
           <S title="3. Informations que nous collectons">
             <p>Nous pouvons collecter les types d'informations suivants selon votre utilisation de l'application.</p>
             <h3 className="text-white font-semibold mt-4">Informations de compte</h3>
-            <p>Lorsque vous créez un compte ou vous vous connectez, nous pouvons collecter :</p>
+            <p>Vous pouvez créer un compte ou vous connecter par e-mail et mot de passe, via Google Sign-In, ou via Sign in with Apple. Selon la méthode choisie, nous pouvons collecter :</p>
             <ul>
-              <li>votre adresse e-mail ;</li>
+              <li>votre adresse e-mail (ou une adresse e-mail relais privée et anonyme si vous choisissez de masquer votre e-mail avec Sign in with Apple) ;</li>
               <li>votre identifiant d'authentification ;</li>
               <li>votre nom d'affichage, si fourni ;</li>
               <li>vos informations de profil, si fournies ;</li>
               <li>les informations liées à la connexion et à l'état du compte.</li>
             </ul>
-            <p>L'authentification est gérée via Supabase.</p>
+            <p>
+              Si vous utilisez Sign in with Apple, Apple ne partage avec nous que le nom et l'adresse e-mail que vous approuvez lors de la connexion, et nous utilisons ces informations uniquement pour créer et gérer votre compte AI Guide. L'authentification est gérée via Supabase, qui gère de manière sécurisée la connexion pour toutes les méthodes prises en charge.
+            </p>
             <h3 className="text-white font-semibold mt-4">Données d'apprentissage et de progression</h3>
             <p>Afin de fournir les fonctionnalités d'apprentissage, nous pouvons stocker :</p>
             <ul>
@@ -115,6 +117,10 @@ function PrivacyPageFr() {
               <li>le stockage des données liées au profil ;</li>
               <li>la synchronisation des données entre appareils.</li>
             </ul>
+            <h3 className="text-white font-semibold mt-4">Sign in with Apple</h3>
+            <p>Nous proposons Sign in with Apple comme méthode de connexion. Lorsque vous l'utilisez, Apple ne partage que les informations que vous approuvez, généralement votre nom et votre adresse e-mail, ou une adresse e-mail relais privée et anonyme si vous choisissez de masquer votre e-mail. Ces informations sont utilisées uniquement pour créer et gérer votre compte, et non à des fins de profilage publicitaire.</p>
+            <h3 className="text-white font-semibold mt-4">Google Sign-In</h3>
+            <p>Nous proposons Google Sign-In comme méthode de connexion. Lorsque vous l'utilisez, Google partage les informations de profil de base que vous approuvez, comme votre nom et votre adresse e-mail, que nous utilisons pour créer et gérer votre compte.</p>
             <h3 className="text-white font-semibold mt-4">Google AdMob</h3>
             <p>Nous utilisons Google AdMob pour afficher des publicités dans l'application. AdMob peut collecter ou traiter des informations telles que les identifiants publicitaires, l'adresse IP, les informations de l'appareil, les interactions avec les publicités et les données de diagnostic.</p>
             <p>Google peut utiliser ces informations pour fournir des publicités, mesurer leurs performances, prévenir la fraude et améliorer ses services publicitaires.</p>
@@ -124,6 +130,7 @@ function PrivacyPageFr() {
             <p>AI Guide peut afficher des bannières publicitaires, des publicités natives, des publicités interstitielles ou d'autres formats publicitaires via Google AdMob.</p>
             <p>Les publicités peuvent être personnalisées ou non personnalisées selon votre localisation, vos choix de consentement, les paramètres de votre appareil et la législation applicable.</p>
             <p>Nous ne contrôlons pas toutes les publicités affichées par Google AdMob, mais nous cherchons à utiliser la publicité d'une manière qui ne perturbe pas l'expérience principale d'apprentissage.</p>
+            <p>Sur iOS, avant que toute donnée ne soit utilisée pour vous suivre à travers les applications ou sites web d'autres entreprises à des fins publicitaires, nous demandons votre autorisation via le cadre App Tracking Transparency d'Apple. Vous pouvez modifier cette autorisation à tout moment dans les réglages de votre appareil.</p>
           </S>
 
           <S title="7. Clause de non-responsabilité concernant le contenu des cours">
@@ -150,6 +157,7 @@ function PrivacyPageFr() {
             <p>Nous pouvons partager ou traiter certaines informations avec des fournisseurs de services de confiance uniquement lorsque cela est nécessaire au fonctionnement de l'application, notamment :</p>
             <ul>
               <li>Supabase pour l'authentification, la base de données et le stockage ;</li>
+              <li>Apple et Google pour l'authentification via Sign in with Apple et Google Sign-In ;</li>
               <li>Google AdMob pour la publicité ;</li>
               <li>des fournisseurs d'analyse, d'hébergement ou de sécurité si ces services sont ajoutés à l'avenir ;</li>
               <li>les autorités légales si la loi l'exige.</li>

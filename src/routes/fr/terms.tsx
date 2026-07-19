@@ -22,7 +22,7 @@ function TermsPageFr() {
       <PageHero
         eyebrow="Légal"
         title="Conditions d'utilisation"
-        description="Dernière mise à jour : 19 mai 2026"
+        description="Dernière mise à jour : 19 juillet 2026"
       />
       <Section className="!pt-0">
         <article className="max-w-3xl mx-auto space-y-8 text-sm leading-7">
@@ -60,7 +60,7 @@ function TermsPageFr() {
           </S>
 
           <S title="4. Comptes">
-            <p>Certaines fonctionnalités peuvent nécessiter un compte, notamment le suivi de progression, les favoris, les séries d'apprentissage, les fonctionnalités de profil et la synchronisation entre appareils.</p>
+            <p>Certaines fonctionnalités peuvent nécessiter un compte, notamment le suivi de progression, les favoris, les séries d'apprentissage, les fonctionnalités de profil et la synchronisation entre appareils. Vous pouvez créer un compte ou vous connecter par e-mail et mot de passe, via Google Sign-In, ou via Sign in with Apple.</p>
             <p>Vous acceptez de :</p>
             <ul>
               <li>fournir des informations de compte exactes ;</li>
@@ -93,6 +93,7 @@ function TermsPageFr() {
             <p>AI Guide utilise des services tiers, notamment :</p>
             <ul>
               <li>Supabase pour la connexion, l'authentification, le stockage en base de données, le contenu des cours et le suivi de progression ;</li>
+              <li>Sign in with Apple et Google Sign-In pour l'authentification du compte ;</li>
               <li>Google AdMob pour la publicité.</li>
             </ul>
             <p>Votre utilisation de l'application peut également être soumise aux politiques de confidentialité et conditions d'utilisation de ces services tiers.</p>

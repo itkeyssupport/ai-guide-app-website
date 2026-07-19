@@ -1,10 +1,11 @@
-import { GOOGLE_PLAY_URL, isPlaceholder } from "@/config/site";
-import { Smartphone } from "lucide-react";
+import { GOOGLE_PLAY_URL, APP_STORE_URL, isPlaceholder } from "@/config/site";
+import { Apple, Smartphone } from "lucide-react";
 
 type Variant = "default" | "compact";
 
 export function DownloadButtons({ variant = "default" }: { variant?: Variant }) {
   const playReady = !isPlaceholder(GOOGLE_PLAY_URL);
+  const appStoreReady = !isPlaceholder(APP_STORE_URL);
 
   const base =
     variant === "compact"
@@ -32,6 +33,28 @@ export function DownloadButtons({ variant = "default" }: { variant?: Variant }) 
         >
           <Smartphone className="h-5 w-5" />
           Google Play: Coming soon
+        </button>
+      )}
+
+      {appStoreReady ? (
+        <a
+          href={APP_STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 font-semibold text-white hover:bg-white/10 transition-colors ${base}`}
+        >
+          <Apple className="h-5 w-5" />
+          Download on the App Store
+        </a>
+      ) : (
+        <button
+          type="button"
+          disabled
+          className={`inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 font-semibold text-white opacity-80 cursor-not-allowed ${base}`}
+          aria-label="App Store link coming soon"
+        >
+          <Apple className="h-5 w-5" />
+          App Store: Coming soon
         </button>
       )}
     </div>
